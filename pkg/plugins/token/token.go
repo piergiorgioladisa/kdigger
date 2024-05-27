@@ -10,7 +10,7 @@ const (
 	bucketName        = "token"
 	bucketDescription = "Token checks for the presence of a service account token in the filesystem."
 
-	tokenPath = "/run/secrets/kubernetes.io/serviceaccount"
+	tokenPath = "/run/secrets/kubernetes.io/serviceaccount:/var/run/secrets/kubernetes.io/serviceaccount"
 )
 
 var bucketAliases = []string{"tokens", "tk"}
